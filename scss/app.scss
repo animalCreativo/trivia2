@@ -1,0 +1,252 @@
+$body-background: white;
+$body-background2: #7AB4B2;
+$body-background404: #15210a;
+
+$titulo-pregunta: black;
+
+@font-face { 
+  font-family: AzoSans-Black;
+  src: url('font/AzoSans-Black.otf'); 
+} 
+@font-face { 
+  font-family: AzoSans-BlackItalic;
+  src: url('font/AzoSans-BlackItalic.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-Bold;
+  src: url('font/AzoSans-Bold.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-BoldItalic;
+  src: url('font/AzoSans-BoldItalic.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-Italic;
+  src: url('font/AzoSans-Italic.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-Light;
+  src: url('font/AzoSans-Light.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-LightItalic;
+  src: url('font/AzoSans-LightItalic.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-Medium;
+  src: url('font/AzoSans-Medium.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-MediumItalic;
+  src: url('font/AzoSans-MediumItalic.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-Regular;
+  src: url('font/AzoSans-Regular.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-Thin;
+  src: url('font/AzoSans-Thin.otf'); 
+}
+@font-face { 
+  font-family: AzoSans-ThinItalic;
+  src: url('font/AzoSans-ThinItalic.otf'); 
+}
+
+body {
+
+  font-family: AzoSans-Bold;
+  background-image:   url(carne1.png),
+                      url(carne2.png),
+                      url(logo.svg),
+                      linear-gradient(to right, rgba(228,233,233,1) 0%,rgba(197,212,207,1) 100%);
+  background-repeat:  no-repeat,
+                      no-repeat,
+                      no-repeat;
+  background-position:  top left,
+                        bottom left,
+                        bottom 30px right 30px;
+  background-size: auto auto,
+                   auto auto, 
+                  250px 250px ;
+
+}
+
+#main-container{
+  height: 100%;
+
+}
+
+.fondoPrincipal{
+  height: 100%;
+  margin: 0px;
+  background-image:  url(carne3.png),
+                     linear-gradient(to right, $body-background2 0%,$body-background2 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto auto;
+
+}
+
+// pantalla falta datos
+
+
+.button{
+  background-color: #7AADAD;  
+  border-radius: 40px 0px 0px 40px;
+}
+
+button.button {
+    font-size: 50px;
+    height: 87px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: auto;
+    min-height: 120px;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.buttonTrue{
+  border-radius: 40px;
+  
+}
+.buttonHope{
+  height: auto;
+  padding: 20px;
+}
+.button:hover, .button:focus{
+    background-color: #7AADAD;  
+}
+button.button  {
+  color:black;
+  min-width: 400px;
+  font-size: 42px;
+}
+.button span{
+  font-weight: 800;
+  color: white;
+  font-size: 50px;
+  padding-right: 50px;
+
+}
+.buttonBegin{
+  background-color: red;
+  border-radius: 40px;
+  font-family: AzoSans-Black;
+  font-size: 40px;
+  width: 100%;
+}
+.buttonBegin span{
+   text-align: center;
+}
+.buttonQ1{
+  font-family: AzoSans-MediumItalic;
+  font-size: 42px;
+}
+.row.container {
+  padding: 25px;
+}
+.textSpecial{
+   color: black;
+  font-family: AzoSans-MediumItalic;
+  font-size: 56px;
+}
+
+.textTrivia{
+  color: white;
+  text-transform: uppercase;
+  font-family: AzoSans-Black;
+  font-size: 72px;
+}
+.textLoser{
+  color: white;
+  font-family: AzoSans-MediumItalic;
+  font-size: 72px;
+}
+.textLoser2{
+  color: black;
+  font-family: AzoSans-MediumItalic;
+  font-size: 56px;
+}
+.textWin{
+  color: white;
+  font-family: AzoSans-MediumItalic;
+  font-size: 72px;
+}
+.textWin2{
+  color: black;
+  font-family: AzoSans-MediumItalic;
+  font-size: 56px;
+}
+
+.textLogin1{
+  color: black;
+  font-family: AzoSans-MediumItalic;
+  font-size: 64px;
+}
+.textLogin2{
+  color: black;
+  font-family: AzoSans-MediumItalic;
+  font-size: 56px;
+}
+.middle-label{
+  border-radius: 40px;
+  background-color: white;
+  height: 40px;
+}
+input.middle-label{
+  text-align: center;
+  color: black;
+  color: black;
+  font-family: AzoSans-MediumItalic;
+  font-size: 56px;
+}
+
+button#btnBegin {
+    height: auto;
+    min-height: 10px;
+}
+button#q1btn1, button#q1btn2, button#q1btn3,button#btnBuscar{
+  height: auto;
+  min-height: 10px;
+}
+
+button#btnBuscar:hover, button#btnBuscar:focus{
+    background-color: red;  
+}
+
+.buttonBegin span {
+    text-align: center;
+    padding-right: 0px;
+}
+//Medias Queris
+
+/* Small only */
+@media screen and (max-width: 350px) {
+
+  
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+}
+
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+
+
+
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
