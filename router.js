@@ -56,13 +56,13 @@ module.exports = function (app) {
 		});
 	});
 
-
+/*
 	app.get('/',function(req,res){   // busca index en view (pug)
 		res.render('index', {
 			title: 'Trivia'
 		});
 	})
-
+*/
 	app.get('/question1',function(req,res){   // busca index en view (pug)
 		res.render('index', {
 			title: 'Trivia'

@@ -4,7 +4,7 @@ var empty = require('empty-element');
 var template = require('./template');
 var request = require('superagent');
 
-var username, email;
+var usernameWinner, emailWinner;
 
 page('/findWinner', clean, function(ctx,next){
 	var main = document.getElementById('main-container');
@@ -22,20 +22,21 @@ page('/findWinner', clean, function(ctx,next){
 	      var jsonObj = jQuery.parseJSON(json);
 	      console.log("datos server2:"+ json );
 	      if (json == [] ){
- 	 		 username= 'No hay ganador';
-	      	 email = ':(';
+ 	 		 usernameWinner= 'No hay ganador';
+	      	 emailWinner = ':(';
 	      }else {
-	      	 username= jsonObj[0].username;
-	      	 email = jsonObj[0].email;
+	      	 usernameWinner= jsonObj[0].username;
+	      	 emailWinner = jsonObj[0].email;
+	      	 $('#nameWinner').text(usernameWinner);    
+	    	 $('#emailWinner').text(emailWinner);
+	   
+	    	console.log("name",usernameWinner);
+	    	console.log("email",emailWinner);
 	      }
 	      
 	    })
 
-	    $('#name').text(username);    
-	    $('#email').text(email);
-	   
-	    console.log("name",username);
-	    console.log("email",email);
+	
 
 	}
 
@@ -43,15 +44,15 @@ page('/findWinner', clean, function(ctx,next){
 	$('.imgContain').on("click", "img", function () {
 	    console.log('You Clicked Me');
 		setTimeout(function () {
-			     window.location.href = "http://165.227.126.154:8000/login";
+			     window.location.href = "/login";
 			}, 2000);
 	});
 });
 
 function clean (ctx, next) {
     
-      $('#name').text('Nombre');    
-	  $('#email').text('Email');
+      $('#nameWinner').text('Nombre');    
+	  $('#emailWinner').text('Email');
       next();
   
 }

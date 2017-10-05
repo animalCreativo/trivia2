@@ -21,8 +21,8 @@ page('/question1',questionwato, function(ctx,next){
 			console.log("Respuesta Incorrecta");
 			localStorage.setItem("correctas",0);
 		} 
-	    
-	    page('/question2');
+	    window.location.href = "/question2";
+	  
 	
 	}
 	function submitFormQ2() {
@@ -35,7 +35,7 @@ page('/question1',questionwato, function(ctx,next){
 			localStorage.setItem("correctas",0);
 		} 
 	    
-	    page('/question2');
+	    window.location.href = "/question2";
 	
 	}
 	function submitFormQ3() {
@@ -48,7 +48,7 @@ page('/question1',questionwato, function(ctx,next){
 			localStorage.setItem("correctas",0);
 		} 
 	    
-	    page('/question2');
+	    window.location.href = "/question2";
 	
 	}
 
@@ -65,6 +65,7 @@ page('/question1',questionwato, function(ctx,next){
 			$('#q1img3').attr("src","item13.png");
 		}else if(id == '2'){
 			$('#q1img1').attr("src","item21.png");
+			$('#q1img1').css({ 'height': 'auto', 'width': '180px' });
 			$('#q1img2').attr("src","item22.png");
 			$('#q1img3').attr("src","item23.png");
 		}else if(id == '5'){

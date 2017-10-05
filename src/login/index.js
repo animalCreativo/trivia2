@@ -21,7 +21,8 @@ page('/login', function(ctx,next){
 
 		localStorage.setItem("username",nameTxt);
 		localStorage.setItem("email",emailTxt);
-	    page('/question1');
+	    //page('/question1');
+	    window.location.href = "/question1";
 
 
 	
@@ -31,7 +32,8 @@ page('/login', function(ctx,next){
 
 	$('.imgContain').on("click", "img", function () {
     	setTimeout(function () {
-		    page('/findWinner');
+    		window.location.href = "/findWinner";
+		   // page('/findWinner');
 		}, 2000);
 	});
 

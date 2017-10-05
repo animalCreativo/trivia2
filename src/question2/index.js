@@ -20,7 +20,7 @@ page('/question2',questionwato, function(ctx,next){
 			console.log("Respuesta Incorrecta");
 		} 
 	    
-	    page('/question3');
+	   window.location.href = "/question3";
 	
 	}
 	function submitFormQ2() {
@@ -32,7 +32,7 @@ page('/question2',questionwato, function(ctx,next){
 			console.log("Respuesta Incorrecta");
 		} 
 	    
-	    page('/question3');
+	    window.location.href = "/question3";
 	
 	}
 	function submitFormQ3() {
@@ -44,7 +44,7 @@ page('/question2',questionwato, function(ctx,next){
 			console.log("Respuesta Incorrecta");
 		} 
 	    
-	    page('/question3');
+	    window.location.href = "/question3";
 	
 	}
 

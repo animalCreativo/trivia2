@@ -24,12 +24,14 @@ page('/question3',questionwato, function(ctx,next){
 		if (localStorage.getItem("correctas")>=2){
 			   saveUserWin();
 			   localStorage.setItem("correctas",0);
-			   page('/winner');
+			   window.location.href = "/winner";
+		
 			  
 		}else {
 			   saveUserLoser();
 			   localStorage.setItem("correctas",0);
-			   page('/loser');
+			   window.location.href = "/loser";
+			   
 		}
  
 	
@@ -46,12 +48,12 @@ page('/question3',questionwato, function(ctx,next){
 		if (localStorage.getItem("correctas")>=2){
 			   saveUserWin();
 			   localStorage.setItem("correctas",0);
-			   page('/winner');
+			   window.location.href = "/winner";
 			  
 		}else {
 			   saveUserLoser();
 			   localStorage.setItem("correctas",0);
-			   page('/loser');
+			   window.location.href = "/loser";
 		}
 
 	

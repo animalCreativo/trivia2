@@ -11,8 +11,8 @@ var login= yo`
           </div> 
           <div class="columns small-10 small-offset-1 text-center ">
               <br>
-              <h5 id="name" class="textWin2 text-center" style=" line-height: 1.2; padding-bottom: 20px;">Nombre.</h5>
-              <h5 id="email" class="textWin2 text-center" style=" line-height: 1.2; padding-bottom: 20px;">Email.</h5>
+              <h5 id="nameWinner" class="textWin2 text-center" style=" line-height: 1.2; padding-bottom: 20px;">Nombre.</h5>
+              <h5 id="emailWinner" class="textWin2 text-center" style=" line-height: 1.2; padding-bottom: 20px;">Email.</h5>
 
           </div> 
           <div class="columns small-12 text-center" >   

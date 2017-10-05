@@ -13,7 +13,7 @@ page('/loser', function(ctx,next){
 	
 	$(document).ready(function (){
 		setTimeout(function () {
-		   window.location.href = "http://165.227.126.154:8000/login";
+		   window.location.href = "/login";
 		}, 2000);
 	});
 });
