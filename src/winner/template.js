@@ -11,7 +11,7 @@ var login= yo`
           </div> 
           <div class="columns small-10 small-offset-1 text-center ">
               <br>
-              <h5 class="textWin2 text-center" style=" line-height: 1.2; padding-bottom: 20px;">Haz respondido<br>correctamente la mayoria<br>de las preguntas.</h5>
+              <h5 class="textWin2 text-center" style=" line-height: 1.2; padding-bottom: 20px;">Has respondido<br>correctamente la mayoria<br>de las preguntas.</h5>
               <h5 class="textWin2 text-center" style=" line-height: 1.2; padding-bottom: 20px;">¡En breve sabrás si eres uno<br>de los ganadores!</h5>
           </div>   
         </div>
