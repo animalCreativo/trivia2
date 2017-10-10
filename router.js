@@ -29,6 +29,26 @@ module.exports = function (app) {
 		});
 	});
 
+	app.get('/getWinnerDay',(req,res)=>{
+		user.getWinnerDay((err,data) =>{
+			res.json(data);
+		});
+	});
+
+	app.get('/getWinnerAllCeldas',(req,res)=>{
+		user.getWinnerAllCeldas((err,data) =>{
+			res.json(data);
+		});
+	});
+
+	app.get('/getAllQuestion',(req,res)=>{
+		user.getAllQuestion((err,data) =>{
+			res.json(data);
+		});
+	});
+
+
+
 	app.post('/users', (req,res)=>{
 		const userData = {
 			username: req.body.username,

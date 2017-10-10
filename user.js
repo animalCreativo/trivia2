@@ -1,6 +1,6 @@
 var mysql = require('mysql');
-
-/*connection = mysql.createConnection({
+/*
+connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'pancho',
 	password: 'killua',
@@ -13,6 +13,7 @@ connection = mysql.createConnection({
 	password: 'Killua_235',
 	database: 'trivia'	
 });
+
 
 
 var userModel = {};
@@ -100,6 +101,51 @@ userModel.getWinner = (callback) => {
 	if (connection){
 		connection.query(
 		"SELECT * FROM `usuario` WHERE  `fecha` >= CURDATE() AND `trivia` = true  ORDER BY RAND() LIMIT 1",
+		(err,rows)=>{
+			if (err){
+				throw err;
+			} else {
+				callback(null,rows);
+			}
+		}
+		)
+	}
+};
+
+userModel.getWinnerAllCeldas = (callback) => {
+	if (connection){
+		connection.query(
+		"SELECT * FROM `usuario` WHERE  `fecha` >= '2017-10-09 20:29:04' AND `trivia` = true  ORDER BY RAND() LIMIT 1",
+		(err,rows)=>{
+			if (err){
+				throw err;
+			} else {
+				callback(null,rows);
+			}
+		}
+		)
+	}
+};
+
+userModel.getWinnerDay = (callback) => {
+	if (connection){
+		connection.query(
+		"SELECT * FROM `usuario` WHERE  `fecha` >= CURDATE() AND `trivia` = true  ORDER BY RAND() LIMIT 1",
+		(err,rows)=>{
+			if (err){
+				throw err;
+			} else {
+				callback(null,rows);
+			}
+		}
+		)
+	}
+};
+
+userModel.getAllQuestion = (callback) => {
+	if (connection){
+		connection.query(
+		"SELECT * FROM `preguntas` ORDER BY `id` ASC",
 		(err,rows)=>{
 			if (err){
 				throw err;
